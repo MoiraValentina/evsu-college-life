@@ -382,6 +382,21 @@
       </div>
     </section>
 
+    <footer>
+      <p>Visitors:</p>
+      <div id="visits"></div>
+    </footer>
+
+    <script>
+      function cb(response) {
+        document.getElementById("visits").innerText = response.value;
+      }
+    </script>
+    <script
+      async
+      src="https://api.countapi.xyz/hit/mysite.com/visits?callback=cb"
+    ></script>
+    
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
